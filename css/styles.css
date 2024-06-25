@@ -11119,6 +11119,26 @@ footer a:hover, footer a:active, footer a:focus {
 .masthead .masthead-device-mockup .device-wrapper {
   max-width: 10rem;
 }
+
+.scale-down {
+  transform: scale(0.5) rotate(10deg); /* proporção e rotação do iPhone */
+  transform-origin: right; /* ponto de origem da transformação (canto direito inferior) */
+}
+
+.scale-down svg {
+  width: 80%;
+  height: 80%;
+}
+
+.emoji-img {
+  position: left;
+  top: 0; /* Ajuste conforme necessário */
+  right: -200px; /* Ajuste conforme necessário */
+  max-width: 500px; /* Ajuste o tamanho conforme necessário */
+  z-index: 10; /* Certifique-se de que a imagem esteja acima de outros elementos */
+}
+
+
 @media (min-width: 576px) {
   .masthead .masthead-device-mockup .circle {
     width: 70%;
